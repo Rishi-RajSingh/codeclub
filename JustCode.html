@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Itim">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Kavoon">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oleo Script Swash Caps">
+<title>JustCode</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+</head>
+<body>
+<script src="script.js"></script>
+	<div id="mySidenav" class="sidenav">
+		<a href="#">About</a>
+		<a href="#">Projects</a>
+		<a href="#tet"  onclick="closeNav(.ab)">Members</a>
+		<a href="#">Contact</a>
+	</div>
+	<div class="menu">
+		<div id="menu_pointer">
+			<div class="ab" onclick="a(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<div class="ab"></div>
+			<div class="ab">
+				Just Code
+			</div>
+		</div>
+	</div>
+	<div id="main">
+		<img src="pic1.png" alt="some_text" style="width:100%;height:600px;">
+		<div class="imgs">
+			<div class="tile1">
+				<img src="pic2.jpg" onmouseover="this.src='pic22.jpg'" onmouseout="this.src='pic2.jpg'" />
+			</div>
+			<div class="tile2">
+				<img src="pic6.jpg" onmouseover="this.src='pic66.jpg'" onmouseout="this.src='pic6.jpg'" />
+			</div>
+			<div class="tile3">
+				<img src="pic4.jpg" onmouseover="this.src='pic44.jpg'" onmouseout="this.src='pic4.jpg'" />
+			</div>
+			<div class="tile4">
+				<img src="pic5.png" onmouseover="this.src='pic55.png'" onmouseout="this.src='pic5.png'" />
+			</div>
+			<div class="tile5">
+				<img src="pic7.jpg" onmouseover="this.src='pic77.jpg'" onmouseout="this.src='pic7.jpg'" />
+			</div>
+			<div class="tile6">
+				<img src="pic3.jpg" onmouseover="this.src='pic33.jpg'" onmouseout="this.src='pic3.jpg'" />
+			</div>
+		</div>
+		<div class="member">
+			<br>
+			<div class="line"></div>
+			<div id="tet"><center>Our Team</center></div>
+			<div class="line"></div>
+			<br>
+			<div class="responsive">
+				<div class="gallery">
+					<img src="vishal.jpg" alt="Vishal Agarwal" class="myImg" onclick="f1()"/>
+					<div class="desc" ><b>Vishal Agarwal</b><br>Co-Founder</div>
+				</div>
+			</div>
+			<div class="responsive">
+				<div class="gallery">
+				<img src="Rishi.jpeg" alt="Rishi Raj Singh" class="myImg"  onclick="f2()"/>
+				<div class="desc"><b id"ea">Rishi Raj Singh</b><br>Co-Founder</div>
+				</div>
+			</div>
+			<div class="responsive">
+				<div class="gallery">
+				<img src="Akash.jpg" alt="Akash Shukla" class="myImg"  onclick="f3()"/>
+				<div class="desc"><b>Akash Shukla</b><br>Co-Founder</div>
+				</div>
+			</div>
+			<div id="myModal" class="modal">
+			<span class="close" onclick="clo()">×</span>
+			<img class="modal-content" id="img01">
+			</div>
+		</div>
+	</div>
+</body>
+</html> 
