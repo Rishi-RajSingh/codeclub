@@ -1,0 +1,232 @@
+body {
+    font-family: "Lato", sans-serif;
+	background-color: #A0A0A0;
+}
+
+.menu{
+	top: 0;
+	width:100%;
+	background-image: url("pic11.png");
+}
+
+.ab {
+	display: inline-block;
+	font-family: 'Oleo Script Swash Caps',serif;
+	color: #222;
+	font-size: 50px;
+	width: 20%;
+    cursor: pointer;
+	padding-left:10px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #222;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(173px,181px) ;
+    transform: rotate(-45deg) translate(173px,181px) ;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(166px, -187px) ;
+    transform: rotate(45deg) translate(166px, -187px) ;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.tile1,.tile2,.tile3,.tile4,.tile5,.tile6{
+	 overflow: hidden;
+	 display: inline;
+}
+
+.tile1 img,.tile2 img,.tile3 img,.tile4 img,.tile5 img,.tile6 img{
+	width:49%;
+	height: 450px;
+}
+
+.tile1 img:hover,.tile2 img:hover,.tile3 img:hover,.tile4 img:hover,.tile5 img:hover,.tile6 img:hover {
+	 position: relative;
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    transform: scale(1.03);
+	-webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.line{
+	width: 100%;
+	height:1px;
+	border: 1px solid #222;
+	
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 8px;
+}
+
+div.gallery:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+	border-radius: 8px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+	font-family:Itim;
+}
+div.desc b{
+	font-size:20px;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 32%;
+}
+
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#tet{
+	font-size: 3.5em;
+	font-family:Kavoon;
+	padding:10px;
+}
+
+
+.myImg {
+	cursor: pointer;
+    transition: 0.3s;
+}
+
+.myImg:hover {opacity: 0.7;}
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 2; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+}
+
+.modal-content { 
+	margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
